@@ -9,11 +9,12 @@
 <meta property="og:title" content="Chega de Delivery: 100 marmitas pra congelar e a semana resolvida">
 <meta property="og:description" content="Cozinhe uma vez no domingo, congele e tenha almoço e jantar prontos na semana. 100 receitas em PDF.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/img/capa.webp">
+<meta property="og:image" content="https://chega-de-delivery.vercel.app/assets/img/capa.webp">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E8452C'/%3E%3Crect x='14' y='20' width='36' height='26' rx='6' fill='%23FFF6E8'/%3E%3Ccircle cx='38' cy='33' r='7' fill='%23F6B93B'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/calc.css">
 </head>
 <body>
 
@@ -96,8 +97,44 @@
   <p class="note" style="margin-top:18px">* Preparo ativo é o tempo com a mão na massa. O tempo de forno ou de panela aparece separado em cada receita.</p>
 </div></section>
 
-<!-- CALCULADORA (será adicionada) -->
-<section id="calculadora" hidden></section>
+<!-- CALCULADORA -->
+<section class="calc sec" id="calculadora" hidden><div class="wrap">
+  <div class="head">
+    <span class="eyebrow">Calculadora</span>
+    <h2>Quanto o delivery pesa no seu mês?</h2>
+    <p>Coloque os seus números. A conta é feita aqui, na hora, e nada é enviado pra lugar nenhum.</p>
+  </div>
+  <div class="grid">
+    <div class="cin">
+      <div class="fld">
+        <div class="lbl"><label for="c-n" style="margin:0">Refeições de delivery por semana</label><b id="c-nv">5 refeições</b></div>
+        <input id="c-n" type="range" min="0" max="14" step="1" value="5">
+      </div>
+      <div class="fld">
+        <label for="c-d">Quanto custa cada pedido (com taxa)</label>
+        <div class="money"><span>R$</span><input id="c-d" type="number" inputmode="decimal" min="0" step="0.5" value="35"></div>
+      </div>
+      <div class="fld">
+        <label for="c-h">Quanto custa uma marmita feita em casa</label>
+        <div class="money"><span>R$</span><input id="c-h" type="number" inputmode="decimal" min="0" step="0.5" value="12"></div>
+        <p class="hint">Some o preço dos ingredientes da receita e divida pelas porções. Valor seu, não uma média.</p>
+      </div>
+    </div>
+    <div class="res" aria-live="polite">
+      <span class="tag">Diferença por mês</span>
+      <div class="big" id="c-big">R$ 0,00</div>
+      <p class="sub" id="c-sub"></p>
+      <div class="rows" id="c-rows">
+        <div><span>Delivery por mês</span><span id="c-del"></span></div>
+        <div><span>Marmita em casa por mês</span><span id="c-home"></span></div>
+        <div><span>Diferença em 12 meses</span><span id="c-year"></span></div>
+        <div><span>O guia se paga</span><span id="c-pay"></span></div>
+      </div>
+      <a class="btn" href="#oferta" data-checkout>Quero meu guia · <span data-price>R$ 9,90</span></a>
+      <p class="fine">Cálculo simples com os valores que você digitou (4,33 semanas por mês). Os números iniciais são só um exemplo: troque pelos seus. Não é promessa de economia.</p>
+    </div>
+  </div>
+</div></section>
 
 <!-- AMOSTRA -->
 <section class="sample"><div class="wrap grid">
@@ -191,5 +228,6 @@
 
 <script src="assets/config.js"></script>
 <script src="assets/app.js"></script>
+<script src="assets/calc.js"></script>
 </body>
 </html>
