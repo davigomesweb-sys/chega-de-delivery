@@ -5,7 +5,7 @@
 // 3) Pixel da Meta: cole o ID quando existir (vazio = nenhum rastreio e nenhum aviso de cookies).
 window.SITE = {
   checkout: "https://pay.kirvano.com/9f217235-043f-4e5a-a3d3-0fe818d3f798",              // link Kirvano do preço de lançamento (R$ 9,90)
-  metaPixelId: "",           // ex.: "1234567890"
+  metaPixelId: "1625165255769327",           // ex.: "1234567890"
   tiktokPixelId: "",
   produto: "Chega de Delivery",
   promo: {
