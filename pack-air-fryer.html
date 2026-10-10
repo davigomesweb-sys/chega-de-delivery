@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pack Air Fryer · Chega de Delivery</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#E8452C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E8452C'/%3E%3Crect x='14' y='20' width='36' height='26' rx='6' fill='%23FFF6E8'/%3E%3Ccircle cx='38' cy='33' r='7' fill='%23F6B93B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.up{padding-block:28px 56px;background:linear-gradient(180deg,var(--cream),var(--paper))}
+.up .wrap{max-width:760px}
+.ok{display:flex;gap:10px;align-items:center;background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:12px 16px;font:600 .9rem/1.35 var(--f-h);margin-bottom:26px}
+.ok i{flex:none;width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;font:800 .85rem/26px var(--f-h);text-align:center;font-style:normal}
+.up h1{font-size:clamp(1.8rem,6.6vw,2.7rem);margin:10px 0 14px}
+.up .cv{width:min(100%,360px);margin:26px auto;border-radius:var(--r);box-shadow:0 18px 40px -18px rgba(30,26,22,.45)}
+.list{list-style:none;padding:0;margin:22px 0;display:grid;gap:10px}
+.list li{position:relative;background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:13px 16px 13px 46px}
+.list li::before{content:"✓";position:absolute;left:14px;top:12px;width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;font:800 .72rem/22px var(--f-h);text-align:center}
+.list b{font-family:var(--f-h)}
+.buy{background:#fff;border:2px solid var(--ink);border-radius:var(--r);padding:22px 20px;text-align:center;margin-top:28px}
+.buy .pr{font:800 2.4rem/1 var(--f-h);color:var(--tomato)}
+.buy .pr small{display:block;font:500 .85rem var(--f-b);color:var(--muted);margin-top:6px}
+.buy .btn{width:100%;margin-top:18px}
+.no{display:block;margin:18px auto 0;background:none;border:0;color:var(--muted);font:500 .9rem var(--f-b);text-decoration:underline;cursor:pointer;padding:8px}
+.fine{font-size:.8rem;color:var(--muted);margin-top:18px;text-align:center}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <span class="brand">CHEGA DE <i>DELIVERY</i></span>
+</div></header>
+<main>
+<section class="up"><div class="wrap">
+
+  <div class="ok"><i>✓</i><span>Pedido confirmado. O acesso ao seu guia chega no seu e-mail.</span></div>
+  <span class="eyebrow">Complemento opcional · só nesta página</span>
+  <h1>Quer mais <span class="hl">40 marmitas</span> feitas na air fryer?</h1>
+  <p class="lead">O Pack Air Fryer é um segundo PDF, pensado pra quem tem air fryer em casa: receitas rápidas, com a crocância que o forno e o micro-ondas não entregam.</p>
+  <img class="cv" src="assets/img/pack-air-fryer.webp" width="640" height="640" alt="Capa do PDF Pack Air Fryer: 40 marmitas rápidas e crocantes">
+  <ul class="list">
+    <li><b>40 receitas novas</b>: frango, carne bovina, suína e linguiça, peixes, ovos e vegetarianas, legumes e acompanhamentos.</li>
+    <li><b>Tabela de tempos e temperaturas</b> pra cada tipo de alimento.</li>
+    <li><b>Como guardar e esquentar</b> sem perder a crocância.</li>
+    <li><b>Misture e combine</b> e uma <b>semana na air fryer</b> já montada.</li>
+    <li>Combina com as receitas do guia que você acabou de comprar.</li>
+  </ul>
+  <div class="buy">
+    <div class="pr">R$ 27<small>pagamento único · PDF com acesso na hora</small></div>
+    <button type="button" class="btn kirvano-payment-trigger">Sim, quero o Pack Air Fryer</button>
+    <button type="button" class="no kirvano-refuse-trigger">Não, obrigado</button>
+  </div>
+  <p class="fine">Precisa de air fryer. Os 10 minutos das receitas são de preparo ativo, fora o tempo de cozimento. Garantia de 7 dias.</p>
+
+</div></section>
+</main>
+<script>
+  var offer = "f188ba35-0da0-42a5-ae65-bb620d518d52";
+  var nextPageURL = null;
+  var refusePageURL = "https://chega-de-delivery.vercel.app/molhos-e-bases.html";
+</script>
+<script src="https://snippets.kirvano.com/upsell.min.js"></script>
+</body>
+</html>
