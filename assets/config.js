@@ -9,7 +9,7 @@ window.SITE = {
   tiktokPixelId: "",
   produto: "Chega de Delivery",
   promo: {
-    ativa: true,
+    ativa: false,
     ate: "2026-10-31T23:59:59-03:00",   // CONFIRMAR: data real do fim do lançamento
     precoPromo: "9,90",
     precoNormal: "19,90",               // só use se for cobrado de verdade depois do prazo
