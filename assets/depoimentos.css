@@ -1,0 +1,28 @@
+.proof{background:var(--cream)}
+.proof[hidden]{display:none}
+.phd{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.6rem 1.4rem}
+.phd h2{margin-top:10px}
+.avg{display:flex;align-items:center;gap:.5em;font-size:.95rem;color:var(--muted)}
+.avg[hidden]{display:none}
+.avg .sn{color:var(--ink)}
+.carr{margin-top:1.4rem;margin-inline:-20px}
+.track{display:flex;gap:14px;scroll-padding-inline:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.track::-webkit-scrollbar{display:none}
+.dep{flex:0 0 min(86%,340px);scroll-snap-align:start;background:#fff;border:2px solid var(--ink);border-radius:16px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:.7rem;box-shadow:0 5px 0 var(--mustard)}
+@media(min-width:900px){.carr{margin-inline:0}.track{padding-inline:0;scroll-padding-inline:0}.dep{flex:0 0 calc((100% - 28px)/3)}}
+.dtag{align-self:flex-start;background:var(--ink);color:var(--mustard);font:700 .68rem/1 var(--f-h);letter-spacing:.08em;text-transform:uppercase;padding:.35rem .6rem;border-radius:6px}
+.dst{display:flex;align-items:center;gap:.4em}
+.st{position:relative;display:inline-block;font-size:1.05rem;letter-spacing:2px;line-height:1;color:#E3D8C2}
+.st::before{content:"★★★★★"}
+.st i{position:absolute;left:0;top:0;height:100%;overflow:hidden;white-space:nowrap;color:#F5A800}
+.st i::before{content:"★★★★★"}
+.sn{font-family:var(--f-h);font-weight:800}
+.dep blockquote{margin:0;font-size:.98rem;line-height:1.55;color:var(--ink);flex:1}
+.dwho{display:flex;align-items:center;gap:.7rem;border-top:1px dashed var(--line);padding-top:.8rem}
+.dwho .av{flex:none;width:48px;height:48px;border-radius:50%;overflow:hidden;background:var(--cream);display:grid;place-items:center}
+.dwho .av img{width:48px;height:48px;object-fit:cover}
+.dwho b{display:block;font-size:.95rem;font-family:var(--f-h)}
+.dwho small{color:var(--muted);font-size:.8rem}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:.4rem}
+.dots button{width:9px;height:9px;border-radius:50%;border:0;padding:0;background:#D9CDB6;cursor:pointer;transition:all .2s}
+.dots button.on{background:var(--tomato);width:24px;border-radius:99px}
