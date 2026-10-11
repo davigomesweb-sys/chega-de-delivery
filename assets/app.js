@@ -79,10 +79,5 @@
   }
   var box = document.querySelector('.cookie');
   var has = !!(S.metaPixelId || S.tiktokPixelId);
-  if(get() === 'yes'){ loadPixels(); }
-  else if(box && has && get() !== 'no'){
-    box.classList.add('show');
-    box.querySelector('.ok').addEventListener('click', function(){ set('yes'); box.classList.remove('show'); loadPixels(); });
-    box.querySelector('.no').addEventListener('click', function(){ set('no'); box.classList.remove('show'); });
-  }
+  loadPixels();
 })();
